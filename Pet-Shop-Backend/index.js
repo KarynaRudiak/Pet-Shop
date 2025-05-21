@@ -24,7 +24,9 @@ app.use('/products', products);
 app.use('/sale', sale);
 app.use('/order', order);
 
-
+app.get('/', (req, res) => {
+  res.send('Backend is running');
+});
 
 
 app.use(express.json());
